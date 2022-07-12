@@ -13,11 +13,11 @@ output = {}
 for result in results:
     output[result] = {}
     try:
-        output[result]['openshares'] = np.scan(hosts=results, arguments='--script smb-enum-shares.nse -p445')['smb']
-        results = ressults['scan']
+        output[result]['openshares'] = np.scan(hosts=resultss, arguments='--script smb-enum-shares.nse -p445')['smb']
+        results = resultss['scan']
         output ={}
-        for results in ressults:
-            output[ressults]={}
+        for results in resultss:
+            output[resultss]={}
     except:
         output[result]['smb'] = 'No Share found'
 print(output,output)
